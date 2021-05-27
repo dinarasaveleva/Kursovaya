@@ -95,31 +95,31 @@ void osnova::GetData(const QJsonObject &data){
     if (!allData.value("Breakfast").isNull() && allData.value("Breakfast").isArray()){
         QJsonArray prods = allData.value("Breakfast").toArray();
         for (int i = 0; i < prods.size(); ++i){
-            Calories += prods.at(i).toObject().value("C").toDouble();
+            Calories += prods.at(i).toObject().value("E").toDouble();
         }
     }
     if (!allData.value("Snack").isNull() && allData.value("Snack").isArray()){
         QJsonArray prods = allData.value("Snack").toArray();
         for (int i = 0; i < prods.size(); ++i){
-            Calories += prods.at(i).toObject().value("C").toDouble();
+            Calories += prods.at(i).toObject().value("E").toDouble();
         }
     }
     if (!allData.value("Lunch").isNull() && allData.value("Lunch").isArray()){
         QJsonArray prods = allData.value("Lunch").toArray();
         for (int i = 0; i < prods.size(); ++i){
-            Calories += prods.at(i).toObject().value("C").toDouble();
+            Calories += prods.at(i).toObject().value("E").toDouble();
         }
     }
     if (!allData.value("AfternoonSnack").isNull() && allData.value("AfternoonSnack").isArray()){
         QJsonArray prods = allData.value("AfternoonSnack").toArray();
         for (int i = 0; i < prods.size(); ++i){
-            Calories += prods.at(i).toObject().value("C").toDouble();
+            Calories += prods.at(i).toObject().value("E").toDouble();
         }
     }
     if (!allData.value("Supper").isNull() && allData.value("Supper").isArray()){
         QJsonArray prods = allData.value("Supper").toArray();
         for (int i = 0; i < prods.size(); ++i){
-            Calories += prods.at(i).toObject().value("C").toDouble();
+            Calories += prods.at(i).toObject().value("E").toDouble();
         }
     }
 
@@ -134,35 +134,35 @@ void osnova::GetDataFromServer(const QJsonObject &data)
     if (!data.value("Breakfast").isNull() && data.value("Breakfast").isArray()){
         QJsonArray prods = data.value("Breakfast").toArray();
         for (int i = 0; i < prods.size(); ++i){
-            Calories += prods.at(i).toObject().value("C").toDouble();
+            Calories += prods.at(i).toObject().value("E").toDouble();
         }
         allData.insert("Breakfast", data.value("Breakfast").toArray());
     }
     if (!data.value("Snack").isNull() && data.value("Snack").isArray()){
         QJsonArray prods = data.value("Snack").toArray();
         for (int i = 0; i < prods.size(); ++i){
-            Calories += prods.at(i).toObject().value("C").toDouble();
+            Calories += prods.at(i).toObject().value("E").toDouble();
         }
         allData.insert("Snack", data.value("Snack").toArray());
     }
     if (!data.value("Lunch").isNull() && data.value("Lunch").isArray()){
         QJsonArray prods = data.value("Lunch").toArray();
         for (int i = 0; i < prods.size(); ++i){
-            Calories += prods.at(i).toObject().value("C").toDouble();
+            Calories += prods.at(i).toObject().value("E").toDouble();
         }
         allData.insert("Lunch", data.value("Lunch").toArray());
     }
     if (!data.value("AfternoonSnack").isNull() && data.value("AfternoonSnack").isArray()){
         QJsonArray prods = data.value("AfternoonSnack").toArray();
         for (int i = 0; i < prods.size(); ++i){
-            Calories += prods.at(i).toObject().value("C").toDouble();
+            Calories += prods.at(i).toObject().value("E").toDouble();
         }
         allData.insert("AfternoonSnack", data.value("AfternoonSnack").toArray());
     }
     if (!data.value("Supper").isNull() && data.value("Supper").isArray()){
         QJsonArray prods = data.value("Supper").toArray();
         for (int i = 0; i < prods.size(); ++i){
-            Calories += prods.at(i).toObject().value("C").toDouble();
+            Calories += prods.at(i).toObject().value("E").toDouble();
         }
         allData.insert("Supper", data.value("Supper").toArray());
     }
