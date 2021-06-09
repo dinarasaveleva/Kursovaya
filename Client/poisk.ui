@@ -87,6 +87,14 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>lineCount</tabstop>
+  <tabstop>FindButton</tabstop>
+  <tabstop>scrollArea</tabstop>
+  <tabstop>AddButton</tabstop>
+  <tabstop>CloseButton_3</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

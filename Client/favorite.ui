@@ -103,6 +103,13 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>scrollArea_2</tabstop>
+  <tabstop>SaveButton</tabstop>
+  <tabstop>DelButton</tabstop>
+  <tabstop>BackButton</tabstop>
+  <tabstop>scrollArea</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

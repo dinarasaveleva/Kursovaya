@@ -1,4 +1,4 @@
-#define SERVER "http://192.168.0.121:5000/"
+#define SERVER "http://15.161.204.85:5000/"
 #include "obmen.h"
 
 obmen::obmen(QObject *parent) : QObject(parent)

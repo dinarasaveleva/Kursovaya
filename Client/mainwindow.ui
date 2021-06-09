@@ -166,6 +166,12 @@
    </layout>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>LoginEdit</tabstop>
+  <tabstop>PasswordEdit</tabstop>
+  <tabstop>AuthButton</tabstop>
+  <tabstop>RegistrButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
